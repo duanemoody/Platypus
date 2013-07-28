@@ -11,5 +11,6 @@
 @interface PlatypusAppSettings : NSObject
 {
     NSMutableDictionary *dict;
+    BOOL resolved;
 }
 @end
