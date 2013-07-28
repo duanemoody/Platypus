@@ -17,6 +17,14 @@
 		F429CCAF17A5806000CDC503 /* iTerm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F429CCAA17A57FF500CDC503 /* iTerm.framework */; };
 		F429CCB117A581F000CDC503 /* CocoatechCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F429CCB017A581F000CDC503 /* CocoatechCore.framework */; };
 		F429CCB217A5820300CDC503 /* CocoatechCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F429CCB017A581F000CDC503 /* CocoatechCore.framework */; };
+		F429CCC017A59D3000CDC503 /* SEOutputController.m in Sources */ = {isa = PBXBuildFile; fileRef = F429CCBF17A59D3000CDC503 /* SEOutputController.m */; };
+		F429CCC317A59DC100CDC503 /* SETextWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F429CCC217A59DC100CDC503 /* SETextWindowController.m */; };
+		F429CCC617A59DD100CDC503 /* SEWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F429CCC517A59DD100CDC503 /* SEWebViewController.m */; };
+		F429CCC917A59E0200CDC503 /* SEProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F429CCC817A59E0200CDC503 /* SEProgressBarController.m */; };
+		F429CCCC17A59E1200CDC503 /* SEStatusMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F429CCCB17A59E1200CDC503 /* SEStatusMenuController.m */; };
+		F429CCCF17A59F1D00CDC503 /* PlatypusAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F429CCCE17A59F1D00CDC503 /* PlatypusAppSettings.m */; };
+		F429CCD017A59F1D00CDC503 /* PlatypusAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F429CCCE17A59F1D00CDC503 /* PlatypusAppSettings.m */; };
+		F429CCD117A59F1D00CDC503 /* PlatypusAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F429CCCE17A59F1D00CDC503 /* PlatypusAppSettings.m */; };
 		F445EA7714FAB61900DCCDB3 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F445EA7614FAB61900DCCDB3 /* Sparkle.framework */; };
 		F445EA7914FAB64C00DCCDB3 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F445EA7614FAB61900DCCDB3 /* Sparkle.framework */; };
 		F445EA7B14FAB93300DCCDB3 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = F445EA7A14FAB93300DCCDB3 /* dsa_pub.pem */; };
@@ -149,6 +157,18 @@
 		F429CCA917A57FF500CDC503 /* CocoaTechStrings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaTechStrings.framework; path = Shared/Frameworks/CocoaTechStrings.framework; sourceTree = "<group>"; };
 		F429CCAA17A57FF500CDC503 /* iTerm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iTerm.framework; path = Shared/Frameworks/iTerm.framework; sourceTree = "<group>"; };
 		F429CCB017A581F000CDC503 /* CocoatechCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoatechCore.framework; path = Shared/Frameworks/CocoatechCore.framework; sourceTree = "<group>"; };
+		F429CCBE17A59D3000CDC503 /* SEOutputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEOutputController.h; path = ScriptExec/SEOutputController.h; sourceTree = "<group>"; };
+		F429CCBF17A59D3000CDC503 /* SEOutputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEOutputController.m; path = ScriptExec/SEOutputController.m; sourceTree = "<group>"; };
+		F429CCC117A59DC100CDC503 /* SETextWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SETextWindowController.h; path = ScriptExec/SETextWindowController.h; sourceTree = "<group>"; };
+		F429CCC217A59DC100CDC503 /* SETextWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SETextWindowController.m; path = ScriptExec/SETextWindowController.m; sourceTree = "<group>"; };
+		F429CCC417A59DD000CDC503 /* SEWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEWebViewController.h; path = ScriptExec/SEWebViewController.h; sourceTree = "<group>"; };
+		F429CCC517A59DD100CDC503 /* SEWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEWebViewController.m; path = ScriptExec/SEWebViewController.m; sourceTree = "<group>"; };
+		F429CCC717A59E0200CDC503 /* SEProgressBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEProgressBarController.h; path = ScriptExec/SEProgressBarController.h; sourceTree = "<group>"; };
+		F429CCC817A59E0200CDC503 /* SEProgressBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEProgressBarController.m; path = ScriptExec/SEProgressBarController.m; sourceTree = "<group>"; };
+		F429CCCA17A59E1200CDC503 /* SEStatusMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEStatusMenuController.h; path = ScriptExec/SEStatusMenuController.h; sourceTree = "<group>"; };
+		F429CCCB17A59E1200CDC503 /* SEStatusMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEStatusMenuController.m; path = ScriptExec/SEStatusMenuController.m; sourceTree = "<group>"; };
+		F429CCCD17A59F1D00CDC503 /* PlatypusAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlatypusAppSettings.h; path = Shared/PlatypusAppSettings.h; sourceTree = "<group>"; };
+		F429CCCE17A59F1D00CDC503 /* PlatypusAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlatypusAppSettings.m; path = Shared/PlatypusAppSettings.m; sourceTree = "<group>"; };
 		F445EA7614FAB61900DCCDB3 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Shared/Frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		F445EA7A14FAB93300DCCDB3 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Sparkle/dsa_pub.pem; sourceTree = "<group>"; };
 		F445EA7D14FABE6500DCCDB3 /* dsa_priv.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_priv.pem; sourceTree = "<group>"; };
@@ -544,6 +564,16 @@
 				F48B7B9011F766E600351575 /* main.m */,
 				F48B7B9111F766E600351575 /* ScriptExecController.h */,
 				F48B7B9211F766E600351575 /* ScriptExecController.m */,
+				F429CCBE17A59D3000CDC503 /* SEOutputController.h */,
+				F429CCBF17A59D3000CDC503 /* SEOutputController.m */,
+				F429CCC117A59DC100CDC503 /* SETextWindowController.h */,
+				F429CCC217A59DC100CDC503 /* SETextWindowController.m */,
+				F429CCC417A59DD000CDC503 /* SEWebViewController.h */,
+				F429CCC517A59DD100CDC503 /* SEWebViewController.m */,
+				F429CCC717A59E0200CDC503 /* SEProgressBarController.h */,
+				F429CCC817A59E0200CDC503 /* SEProgressBarController.m */,
+				F429CCCA17A59E1200CDC503 /* SEStatusMenuController.h */,
+				F429CCCB17A59E1200CDC503 /* SEStatusMenuController.m */,
 				F429CC9B17A57B2000CDC503 /* SETerminalView.h */,
 				F429CC9C17A57B2000CDC503 /* SETerminalView.m */,
 				F48B7C6711F768A000351575 /* Resources */,
@@ -688,6 +718,8 @@
 			children = (
 				F4FE739611F792D5005FC23A /* PlatypusAppSpec.h */,
 				F4FE739711F792D5005FC23A /* PlatypusAppSpec.m */,
+				F429CCCD17A59F1D00CDC503 /* PlatypusAppSettings.h */,
+				F429CCCE17A59F1D00CDC503 /* PlatypusAppSettings.m */,
 			);
 			name = PlatypusAppSpec;
 			sourceTree = "<group>";
@@ -924,6 +956,7 @@
 				F4871B2B1789D19F00DE54F3 /* STPathTextField.m in Sources */,
 				F4871B2F1789D1B400DE54F3 /* STPrivilegedTask.m in Sources */,
 				F48B1EE017935BBC007DA173 /* ScriptAnalyser.m in Sources */,
+				F429CCD117A59F1D00CDC503 /* PlatypusAppSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,6 +970,12 @@
 				F4AF785D14D1E5F200544C1B /* STDragWebView.m in Sources */,
 				F4871B2E1789D1B400DE54F3 /* STPrivilegedTask.m in Sources */,
 				F429CC9D17A57B2000CDC503 /* SETerminalView.m in Sources */,
+				F429CCC017A59D3000CDC503 /* SEOutputController.m in Sources */,
+				F429CCC317A59DC100CDC503 /* SETextWindowController.m in Sources */,
+				F429CCC617A59DD100CDC503 /* SEWebViewController.m in Sources */,
+				F429CCC917A59E0200CDC503 /* SEProgressBarController.m in Sources */,
+				F429CCCC17A59E1200CDC503 /* SEStatusMenuController.m in Sources */,
+				F429CCCF17A59F1D00CDC503 /* PlatypusAppSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -948,6 +987,7 @@
 				F48B1EDC17935AF6007DA173 /* PlatypusUtility.m in Sources */,
 				F4FE747B11F79399005FC23A /* platypus_command_line_tool.m in Sources */,
 				F48B1EDF17935BBC007DA173 /* ScriptAnalyser.m in Sources */,
+				F429CCD017A59F1D00CDC503 /* PlatypusAppSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface PlatypusAppSettings : NSObject
-
+{
+    NSMutableDictionary *dict;
+}
 @end
