@@ -148,7 +148,8 @@
     // we need some additional info from AppSettings.plist if we are presenting textual output
     if (outputType == PLATYPUS_PROGRESSBAR_OUTPUT ||
         outputType == PLATYPUS_TEXTWINDOW_OUTPUT ||
-        outputType == PLATYPUS_STATUSMENU_OUTPUT) {
+        outputType == PLATYPUS_STATUSMENU_OUTPUT ||
+        outputType == PLATYPUS_TERMINAL_OUTPUT) {
         //make sure all this data is sane, revert to defaults if not
         
         // font and size
@@ -290,7 +291,6 @@
     if (outputType == PLATYPUS_STATUSMENU_OUTPUT)
         return;
 
-    NSLog(@"App did finish launching");
     if (promptForFileOnLaunch && isDroppable && ![jobQueue count])
         [self openFiles:self];
     else
@@ -334,6 +334,11 @@
     [jobQueue removeAllObjects];
     
     return YES;
+}
+
+- (NSString *)scriptCommandString {
+    NSString *str = [NSString stringWithFormat:@"%@ %@ %@ %@", interpreter, [interpreterArgs componentsJoinedByString:@" "], scriptPath, [scriptArgs componentsJoinedByString:@" "]];
+    return str;
 }
 
 #pragma mark - Interface manipulation
@@ -436,6 +441,11 @@
             if ([[terminalOutputWindow frameAutosaveName] isEqualToString:@""])
                 [terminalOutputWindow center];
             [terminalOutputWindow makeKeyAndOrderFront:self];
+            
+            [terminalView newSessionWithCommand: [self scriptCommandString]];
+            
+            [[terminalView term] setFont:textFont nafont:textFont];
+
         }
             break;
             

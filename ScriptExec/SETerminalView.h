@@ -7,7 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class ITTerminalView;
 
 @interface SETerminalView : NSView
+{
+    ITTerminalView *term;
+}
+- (void)newSessionWithCommand: (NSString *)cmd;
+- (ITTerminalView *)term;
 
 @end

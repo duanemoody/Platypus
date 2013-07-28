@@ -29,7 +29,7 @@
 	<key>RequiresAdminPrivileges</key>
 	<false/>
 	<key>PromptForFileOnLaunch</key>
-	<true/>
+	<false/>
 	<key>RunInBackground</key>
 	<false/>
 	<key>AcceptsText</key>

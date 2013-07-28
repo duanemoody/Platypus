@@ -13,38 +13,33 @@
 
 @implementation SETerminalView
 
-- (id)initWithFrame:(NSRect)frameRect
-{
-	if ((self = [super initWithFrame:frameRect]) != nil) {
-		// Add initialization code here
-	}
-	return self;
+- (id)initWithFrame:(NSRect)frameRect {
+    if ((self = [super initWithFrame:frameRect]) != nil) {
+        // Add initialization code here
+    }
+    return self;
 }
 
-- (void)drawRect:(NSRect)rect
-{
-}
-
-- (void)awakeFromNib;
-{
-	// make sure this is initialized (yes goofy, I know)
- 	[iTermController sharedInstance];
-	
-	NSDictionary* dict = [[ITAddressBookMgr sharedInstance] defaultBookmarkData];
-	ITTerminalView* term = [ITTerminalView view:dict];
+- (void)awakeFromNib {
     
-	[term setFrame:[self bounds]];
-	
-	[self addSubview:term];
-	[term addNewSession:dict withCommand:nil withURL:nil];
-	
-	// goofy hack to show window, ignore
-	[self performSelector:@selector(showWindow) withObject:nil afterDelay:0];
 }
 
-- (void)showWindow;
-{
-	[[self window] makeKeyAndOrderFront:nil];
+- (void)newSessionWithCommand: (NSString *)cmd {
+    // make sure this is initialized (yes goofy, I know)
+    [iTermController sharedInstance];
+    
+    NSDictionary *dict = [[ITAddressBookMgr sharedInstance] defaultBookmarkData];
+    term = [ITTerminalView view:dict];
+    
+    NSLog(@"DeSCRIPTION: %@", [dict description]);
+    
+    [term setFrame:[self bounds]];
+    [self addSubview:term];
+    [term addNewSession:dict withCommand:cmd withURL:nil];
+}
+
+- (ITTerminalView *)term {
+    return term;
 }
 
 @end
