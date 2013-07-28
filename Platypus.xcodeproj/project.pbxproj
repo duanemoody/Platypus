@@ -10,6 +10,13 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		F40F756013C266AE00197499 /* ShellCommandController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40F755F13C266AE00197499 /* ShellCommandController.m */; };
+		F429CC9D17A57B2000CDC503 /* SETerminalView.m in Sources */ = {isa = PBXBuildFile; fileRef = F429CC9C17A57B2000CDC503 /* SETerminalView.m */; };
+		F429CCAB17A57FF500CDC503 /* CocoaTechStrings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F429CCA917A57FF500CDC503 /* CocoaTechStrings.framework */; };
+		F429CCAC17A57FF500CDC503 /* iTerm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F429CCAA17A57FF500CDC503 /* iTerm.framework */; };
+		F429CCAE17A5805E00CDC503 /* CocoaTechStrings.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F429CCA917A57FF500CDC503 /* CocoaTechStrings.framework */; };
+		F429CCAF17A5806000CDC503 /* iTerm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F429CCAA17A57FF500CDC503 /* iTerm.framework */; };
+		F429CCB117A581F000CDC503 /* CocoatechCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F429CCB017A581F000CDC503 /* CocoatechCore.framework */; };
+		F429CCB217A5820300CDC503 /* CocoatechCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F429CCB017A581F000CDC503 /* CocoatechCore.framework */; };
 		F445EA7714FAB61900DCCDB3 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F445EA7614FAB61900DCCDB3 /* Sparkle.framework */; };
 		F445EA7914FAB64C00DCCDB3 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F445EA7614FAB61900DCCDB3 /* Sparkle.framework */; };
 		F445EA7B14FAB93300DCCDB3 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = F445EA7A14FAB93300DCCDB3 /* dsa_pub.pem */; };
@@ -106,6 +113,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F429CCAD17A5805500CDC503 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F429CCAE17A5805E00CDC503 /* CocoaTechStrings.framework in CopyFiles */,
+				F429CCAF17A5806000CDC503 /* iTerm.framework in CopyFiles */,
+				F429CCB217A5820300CDC503 /* CocoatechCore.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F445EA7814FAB63A00DCCDB3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,6 +144,11 @@
 		F40F755E13C266AE00197499 /* ShellCommandController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellCommandController.h; path = PlatypusApplication/ShellCommandController.h; sourceTree = "<group>"; };
 		F40F755F13C266AE00197499 /* ShellCommandController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShellCommandController.m; path = PlatypusApplication/ShellCommandController.m; sourceTree = "<group>"; };
 		F4185E5811FC57AB0027C8D7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlatypusApplication/Info.plist; sourceTree = "<group>"; };
+		F429CC9B17A57B2000CDC503 /* SETerminalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SETerminalView.h; path = ScriptExec/SETerminalView.h; sourceTree = "<group>"; };
+		F429CC9C17A57B2000CDC503 /* SETerminalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SETerminalView.m; path = ScriptExec/SETerminalView.m; sourceTree = "<group>"; };
+		F429CCA917A57FF500CDC503 /* CocoaTechStrings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaTechStrings.framework; path = Shared/Frameworks/CocoaTechStrings.framework; sourceTree = "<group>"; };
+		F429CCAA17A57FF500CDC503 /* iTerm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iTerm.framework; path = Shared/Frameworks/iTerm.framework; sourceTree = "<group>"; };
+		F429CCB017A581F000CDC503 /* CocoatechCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoatechCore.framework; path = Shared/Frameworks/CocoatechCore.framework; sourceTree = "<group>"; };
 		F445EA7614FAB61900DCCDB3 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Shared/Frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		F445EA7A14FAB93300DCCDB3 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Sparkle/dsa_pub.pem; sourceTree = "<group>"; };
 		F445EA7D14FABE6500DCCDB3 /* dsa_priv.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_priv.pem; sourceTree = "<group>"; };
@@ -278,6 +302,9 @@
 				F48B7B8111F7666600351575 /* Security.framework in Frameworks */,
 				F48B7B8511F7667B00351575 /* Cocoa.framework in Frameworks */,
 				F48B7BAB11F7675900351575 /* WebKit.framework in Frameworks */,
+				F429CCAB17A57FF500CDC503 /* CocoaTechStrings.framework in Frameworks */,
+				F429CCAC17A57FF500CDC503 /* iTerm.framework in Frameworks */,
+				F429CCB117A581F000CDC503 /* CocoatechCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +392,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F429CCB017A581F000CDC503 /* CocoatechCore.framework */,
+				F429CCA917A57FF500CDC503 /* CocoaTechStrings.framework */,
+				F429CCAA17A57FF500CDC503 /* iTerm.framework */,
 				F445EA7614FAB61900DCCDB3 /* Sparkle.framework */,
 				F48B7BAA11F7675900351575 /* WebKit.framework */,
 				F4E1F47C11F756D9007EE2E3 /* Security.framework */,
@@ -514,6 +544,8 @@
 				F48B7B9011F766E600351575 /* main.m */,
 				F48B7B9111F766E600351575 /* ScriptExecController.h */,
 				F48B7B9211F766E600351575 /* ScriptExecController.m */,
+				F429CC9B17A57B2000CDC503 /* SETerminalView.h */,
+				F429CC9C17A57B2000CDC503 /* SETerminalView.m */,
 				F48B7C6711F768A000351575 /* Resources */,
 			);
 			name = "ScriptExec Binary";
@@ -717,6 +749,7 @@
 				F48B773D11F7661C00351575 /* Resources */,
 				F48B773E11F7661C00351575 /* Sources */,
 				F48B773F11F7661C00351575 /* Frameworks */,
+				F429CCAD17A5805500CDC503 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -903,6 +936,7 @@
 				F44EFF0612296F3700CAC9C2 /* NSColor+HexTools.m in Sources */,
 				F4AF785D14D1E5F200544C1B /* STDragWebView.m in Sources */,
 				F4871B2E1789D1B400DE54F3 /* STPrivilegedTask.m in Sources */,
+				F429CC9D17A57B2000CDC503 /* SETerminalView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,7 +1067,7 @@
 		F41B2182085CD8FF00B63B0D /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_CW_ASM_SYNTAX = NO;
@@ -1147,6 +1181,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Shared/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_PASCAL_STRINGS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1172,6 +1210,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Shared/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_ENABLE_PASCAL_STRINGS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1195,6 +1237,10 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Shared/Frameworks\"",
+				);
 				GCC_ENABLE_PASCAL_STRINGS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";

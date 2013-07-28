@@ -59,6 +59,10 @@
     IBOutlet id webOutputProgressIndicator;
     IBOutlet id webOutputMessageTextField;
     
+    // terminal view
+    IBOutlet id terminalOutputWindow;
+    IBOutlet id terminalView;
+    
     // status item menu
     NSStatusItem *statusItem;
     NSMenu *statusItemMenu;

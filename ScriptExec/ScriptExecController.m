@@ -140,6 +140,8 @@
         outputType = PLATYPUS_DROPLET_OUTPUT;
     else if ([outputTypeStr isEqualToString:@"None"])
         outputType = PLATYPUS_NONE_OUTPUT;
+    else if ([outputTypeStr isEqualToString:@"Terminal"])
+        outputType = PLATYPUS_TERMINAL_OUTPUT;
     else
         [self fatalAlert:@"Corrupt app settings" subText:@"Invalid Output Mode."];
     
@@ -425,6 +427,15 @@
             if ([[textOutputWindow frameAutosaveName] isEqualToString:@""])
                 [textOutputWindow center];
             [textOutputWindow makeKeyAndOrderFront:self];
+        }
+            break;
+        
+        case PLATYPUS_TERMINAL_OUTPUT:
+        {
+            [terminalOutputWindow setTitle:appName];
+            if ([[terminalOutputWindow frameAutosaveName] isEqualToString:@""])
+                [terminalOutputWindow center];
+            [terminalOutputWindow makeKeyAndOrderFront:self];
         }
             break;
             

@@ -84,6 +84,7 @@
 #define PLATYPUS_WEBVIEW_OUTPUT             4
 #define PLATYPUS_STATUSMENU_OUTPUT          5
 #define PLATYPUS_DROPLET_OUTPUT             6
+#define PLATYPUS_TERMINAL_OUTPUT            7
 
 // execution style
 #define PLATYPUS_NORMAL_EXECUTION           0
@@ -99,11 +100,12 @@
 
 // array of output types, used for validation
 #define PLATYPUS_OUTPUT_TYPES       [NSArray arrayWithObjects : @ "None", \
-@ "Progress Bar", \
-@ "Text Window", \
-@ "Web View", \
-@ "Droplet", \
-@ "Status Menu", nil]
+@ "Progress Bar",\
+@ "Text Window",\
+@ "Web View",\
+@ "Droplet",\
+@ "Status Menu",\
+@ "Terminal", nil]
 
 #pragma mark -
 
