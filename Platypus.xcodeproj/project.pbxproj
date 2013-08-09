@@ -443,6 +443,25 @@
 			name = STPathTextField;
 			sourceTree = "<group>";
 		};
+		F423AE3C17B568C9000C8E16 /* Output Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F429CCBE17A59D3000CDC503 /* SEOutputController.h */,
+				F429CCBF17A59D3000CDC503 /* SEOutputController.m */,
+				F429CCC117A59DC100CDC503 /* SETextWindowController.h */,
+				F429CCC217A59DC100CDC503 /* SETextWindowController.m */,
+				F429CCC417A59DD000CDC503 /* SEWebViewController.h */,
+				F429CCC517A59DD100CDC503 /* SEWebViewController.m */,
+				F429CCC717A59E0200CDC503 /* SEProgressBarController.h */,
+				F429CCC817A59E0200CDC503 /* SEProgressBarController.m */,
+				F429CCCA17A59E1200CDC503 /* SEStatusMenuController.h */,
+				F429CCCB17A59E1200CDC503 /* SEStatusMenuController.m */,
+				F429CC9B17A57B2000CDC503 /* SETerminalView.h */,
+				F429CC9C17A57B2000CDC503 /* SETerminalView.m */,
+			);
+			name = "Output Controllers";
+			sourceTree = "<group>";
+		};
 		F44587170FC386B500CD0C02 /* STPrivilegedTask */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,18 +583,7 @@
 				F48B7B9011F766E600351575 /* main.m */,
 				F48B7B9111F766E600351575 /* ScriptExecController.h */,
 				F48B7B9211F766E600351575 /* ScriptExecController.m */,
-				F429CCBE17A59D3000CDC503 /* SEOutputController.h */,
-				F429CCBF17A59D3000CDC503 /* SEOutputController.m */,
-				F429CCC117A59DC100CDC503 /* SETextWindowController.h */,
-				F429CCC217A59DC100CDC503 /* SETextWindowController.m */,
-				F429CCC417A59DD000CDC503 /* SEWebViewController.h */,
-				F429CCC517A59DD100CDC503 /* SEWebViewController.m */,
-				F429CCC717A59E0200CDC503 /* SEProgressBarController.h */,
-				F429CCC817A59E0200CDC503 /* SEProgressBarController.m */,
-				F429CCCA17A59E1200CDC503 /* SEStatusMenuController.h */,
-				F429CCCB17A59E1200CDC503 /* SEStatusMenuController.m */,
-				F429CC9B17A57B2000CDC503 /* SETerminalView.h */,
-				F429CC9C17A57B2000CDC503 /* SETerminalView.m */,
+				F423AE3C17B568C9000C8E16 /* Output Controllers */,
 				F48B7C6711F768A000351575 /* Resources */,
 			);
 			name = "ScriptExec Binary";
