@@ -269,7 +269,7 @@ int main(int argc, const char *argv[]) {
                 break;
                 
                 // App Category
-            case 'T:
+            case 'T':
                 [properties setObject:[NSString stringWithCString:optarg encoding:DEFAULT_OUTPUT_TXT_ENCODING] forKey:@"Category"];
                 break;
                 
@@ -610,6 +610,7 @@ static void PrintHelp(void) {
        -Q [iconPath]        Set icon for documents\n\
        -V [version]         Set version of application\n\
        -I [identifier]      Set bundle identifier (i.e. org.yourname.appname)\n\
+       -T [category]        Set application category (e.g. public.app-category.utilities)\n\
        \n\
        -A                   App runs with Administrator privileges\n\
        -S                   Secure bundled script\n\
