@@ -44,7 +44,7 @@
 
 ///////////// DEFINITIONS ////////////////
 
-#define OPT_STRING "P:f:a:o:i:u:p:V:I:Q:ASOZDBRFNydlvhxX:G:C:b:g:n:E:K:Y:L:H:U:"
+#define OPT_STRING "P:f:a:o:i:u:p:V:I:T:Q:ASOZDBRFNydlvhxX:G:C:b:g:n:E:K:Y:L:H:U:"
 
 ///////////// PROTOTYPES ////////////////
 
@@ -266,6 +266,11 @@ int main(int argc, const char *argv[]) {
                 // Identifier
             case 'I':
                 [properties setObject:[NSString stringWithCString:optarg encoding:DEFAULT_OUTPUT_TXT_ENCODING] forKey:@"Identifier"];
+                break;
+                
+                // App Category
+            case 'T:
+                [properties setObject:[NSString stringWithCString:optarg encoding:DEFAULT_OUTPUT_TXT_ENCODING] forKey:@"Category"];
                 break;
                 
                 // The checkbox options
