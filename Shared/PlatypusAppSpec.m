@@ -118,6 +118,7 @@
     [properties setObject:DEFAULT_VERSION forKey:@"Version"];
     [properties setObject:DEFAULT_BUNDLE_ID forKey:@"Identifier"];
     [properties setObject:NSFullUserName() forKey:@"Author"];
+    //[properties setObject:LSApplicationCategoryType() forKey:@"Category"];
     
     [properties setValue:[NSNumber numberWithBool:NO] forKey:@"Droppable"];
     [properties setValue:[NSNumber numberWithBool:NO] forKey:@"Secure"];
@@ -464,12 +465,13 @@
                                       [properties objectForKey:@"Version"],      @"CFBundleShortVersionString",
                                       [properties objectForKey:@"Identifier"],   @"CFBundleIdentifier",
                                       [properties objectForKey:@"ShowInDock"],   @"LSUIElement",
+                                      [properties objectForKey:@"Category"],     @"LSApplicationCategoryType",
                                       @"6.0",                                     @"CFBundleInfoDictionaryVersion",
                                       @"APPL",                                    @"CFBundlePackageType",
                                       @"MainMenu",                                @"NSMainNibFile",
                                       PROGRAM_MIN_SYS_VERSION,                    @"LSMinimumSystemVersion",
                                       @"NSApplication",                           @"NSPrincipalClass",
-                                      
+
                                       nil];
     
     if (![[properties objectForKey:@"IconPath"] isEqualToString:@""])
